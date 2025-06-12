@@ -1,0 +1,602 @@
+[
+  {
+    "month": "Jan",
+    "sales": 22305,
+    "visitors": 1147,
+    "revenue": 44610
+  },
+  {
+    "month": "Feb",
+    "sales": 12807,
+    "visitors": 1457,
+    "revenue": 25614
+  },
+  {
+    "month": "Mar",
+    "sales": 20427,
+    "visitors": 1226,
+    "revenue": 40854
+  },
+  {
+    "month": "Apr",
+    "sales": 15313,
+    "visitors": 905,
+    "revenue": 30626
+  },
+  {
+    "month": "May",
+    "sales": 15200,
+    "visitors": 1546,
+    "revenue": 30400
+  },
+  {
+    "month": "Jun",
+    "sales": 10009,
+    "visitors": 1586,
+    "revenue": 20018
+  },
+  {
+    "month": "Jul",
+    "sales": 16827,
+    "visitors": 1564,
+    "revenue": 33654
+  },
+  {
+    "month": "Aug",
+    "sales": 11574,
+    "visitors": 1090,
+    "revenue": 23148
+  },
+  {
+    "month": "Sep",
+    "sales": 11957,
+    "visitors": 1108,
+    "revenue": 23914
+  },
+  {
+    "month": "Oct",
+    "sales": 24359,
+    "visitors": 1536,
+    "revenue": 48718
+  },
+  {
+    "month": "Nov",
+    "sales": 23221,
+    "visitors": 832,
+    "revenue": 46442
+  },
+  {
+    "month": "Dec",
+    "sales": 21419,
+    "visitors": 1308,
+    "revenue": 42838
+  },
+  {
+    "month": "Jan",
+    "sales": 20870,
+    "visitors": 1278,
+    "revenue": 41740
+  },
+  {
+    "month": "Feb",
+    "sales": 22275,
+    "visitors": 1383,
+    "revenue": 44550
+  },
+  {
+    "month": "Mar",
+    "sales": 12857,
+    "visitors": 1492,
+    "revenue": 25714
+  },
+  {
+    "month": "Apr",
+    "sales": 10490,
+    "visitors": 1388,
+    "revenue": 20980
+  },
+  {
+    "month": "May",
+    "sales": 24607,
+    "visitors": 824,
+    "revenue": 49214
+  },
+  {
+    "month": "Jun",
+    "sales": 20204,
+    "visitors": 1108,
+    "revenue": 40408
+  },
+  {
+    "month": "Jul",
+    "sales": 16963,
+    "visitors": 974,
+    "revenue": 33926
+  },
+  {
+    "month": "Aug",
+    "sales": 10347,
+    "visitors": 1161,
+    "revenue": 20694
+  },
+  {
+    "month": "Sep",
+    "sales": 24781,
+    "visitors": 1231,
+    "revenue": 49562
+  },
+  {
+    "month": "Oct",
+    "sales": 18346,
+    "visitors": 1429,
+    "revenue": 36692
+  },
+  {
+    "month": "Nov",
+    "sales": 14463,
+    "visitors": 1360,
+    "revenue": 28926
+  },
+  {
+    "month": "Dec",
+    "sales": 16223,
+    "visitors": 1434,
+    "revenue": 32446
+  },
+  {
+    "month": "Jan",
+    "sales": 13630,
+    "visitors": 1121,
+    "revenue": 27260
+  },
+  {
+    "month": "Feb",
+    "sales": 18640,
+    "visitors": 998,
+    "revenue": 37280
+  },
+  {
+    "month": "Mar",
+    "sales": 17736,
+    "visitors": 1406,
+    "revenue": 35472
+  },
+  {
+    "month": "Apr",
+    "sales": 21377,
+    "visitors": 1337,
+    "revenue": 42754
+  },
+  {
+    "month": "May",
+    "sales": 19121,
+    "visitors": 1382,
+    "revenue": 38242
+  },
+  {
+    "month": "Jun",
+    "sales": 21237,
+    "visitors": 1360,
+    "revenue": 42474
+  },
+  {
+    "month": "Jul",
+    "sales": 12665,
+    "visitors": 1584,
+    "revenue": 25330
+  },
+  {
+    "month": "Aug",
+    "sales": 11009,
+    "visitors": 1482,
+    "revenue": 22018
+  },
+  {
+    "month": "Sep",
+    "sales": 16515,
+    "visitors": 1035,
+    "revenue": 33030
+  },
+  {
+    "month": "Oct",
+    "sales": 22305,
+    "visitors": 813,
+    "revenue": 44610
+  },
+  {
+    "month": "Nov",
+    "sales": 14147,
+    "visitors": 1208,
+    "revenue": 28294
+  },
+  {
+    "month": "Dec",
+    "sales": 12606,
+    "visitors": 1097,
+    "revenue": 25212
+  },
+  {
+    "month": "Jan",
+    "sales": 17332,
+    "visitors": 1330,
+    "revenue": 34664
+  },
+  {
+    "month": "Feb",
+    "sales": 22998,
+    "visitors": 1323,
+    "revenue": 45996
+  },
+  {
+    "month": "Mar",
+    "sales": 17011,
+    "visitors": 1051,
+    "revenue": 34022
+  },
+  {
+    "month": "Apr",
+    "sales": 20521,
+    "visitors": 922,
+    "revenue": 41042
+  },
+  {
+    "month": "May",
+    "sales": 20280,
+    "visitors": 956,
+    "revenue": 40560
+  },
+  {
+    "month": "Jun",
+    "sales": 22716,
+    "visitors": 1327,
+    "revenue": 45432
+  },
+  {
+    "month": "Jul",
+    "sales": 20077,
+    "visitors": 1248,
+    "revenue": 40154
+  },
+  {
+    "month": "Aug",
+    "sales": 21684,
+    "visitors": 1155,
+    "revenue": 43368
+  },
+  {
+    "month": "Sep",
+    "sales": 24000,
+    "visitors": 1066,
+    "revenue": 48000
+  },
+  {
+    "month": "Oct",
+    "sales": 24528,
+    "visitors": 867,
+    "revenue": 49056
+  },
+  {
+    "month": "Nov",
+    "sales": 17358,
+    "visitors": 1232,
+    "revenue": 34716
+  },
+  {
+    "month": "Dec",
+    "sales": 12601,
+    "visitors": 871,
+    "revenue": 25202
+  },
+  {
+    "month": "Jan",
+    "sales": 16993,
+    "visitors": 1546,
+    "revenue": 33986
+  },
+  {
+    "month": "Feb",
+    "sales": 22353,
+    "visitors": 1414,
+    "revenue": 44706
+  },
+  {
+    "month": "Mar",
+    "sales": 20529,
+    "visitors": 1583,
+    "revenue": 41058
+  },
+  {
+    "month": "Apr",
+    "sales": 10283,
+    "visitors": 1463,
+    "revenue": 20566
+  },
+  {
+    "month": "May",
+    "sales": 12667,
+    "visitors": 1192,
+    "revenue": 25334
+  },
+  {
+    "month": "Jun",
+    "sales": 18544,
+    "visitors": 1133,
+    "revenue": 37088
+  },
+  {
+    "month": "Jul",
+    "sales": 22251,
+    "visitors": 1237,
+    "revenue": 44502
+  },
+  {
+    "month": "Aug",
+    "sales": 12927,
+    "visitors": 1247,
+    "revenue": 25854
+  },
+  {
+    "month": "Sep",
+    "sales": 16385,
+    "visitors": 1402,
+    "revenue": 32770
+  },
+  {
+    "month": "Oct",
+    "sales": 18480,
+    "visitors": 1152,
+    "revenue": 36960
+  },
+  {
+    "month": "Nov",
+    "sales": 24287,
+    "visitors": 838,
+    "revenue": 48574
+  },
+  {
+    "month": "Dec",
+    "sales": 19066,
+    "visitors": 896,
+    "revenue": 38132
+  },
+  {
+    "month": "Jan",
+    "sales": 13072,
+    "visitors": 1195,
+    "revenue": 26144
+  },
+  {
+    "month": "Feb",
+    "sales": 18193,
+    "visitors": 1510,
+    "revenue": 36386
+  },
+  {
+    "month": "Mar",
+    "sales": 23159,
+    "visitors": 1569,
+    "revenue": 46318
+  },
+  {
+    "month": "Apr",
+    "sales": 18018,
+    "visitors": 1100,
+    "revenue": 36036
+  },
+  {
+    "month": "May",
+    "sales": 12215,
+    "visitors": 1264,
+    "revenue": 24430
+  },
+  {
+    "month": "Jun",
+    "sales": 12005,
+    "visitors": 1412,
+    "revenue": 24010
+  },
+  {
+    "month": "Jul",
+    "sales": 20915,
+    "visitors": 1591,
+    "revenue": 41830
+  },
+  {
+    "month": "Aug",
+    "sales": 10546,
+    "visitors": 1471,
+    "revenue": 21092
+  },
+  {
+    "month": "Sep",
+    "sales": 12721,
+    "visitors": 969,
+    "revenue": 25442
+  },
+  {
+    "month": "Oct",
+    "sales": 24042,
+    "visitors": 1005,
+    "revenue": 48084
+  },
+  {
+    "month": "Nov",
+    "sales": 17894,
+    "visitors": 899,
+    "revenue": 35788
+  },
+  {
+    "month": "Dec",
+    "sales": 10730,
+    "visitors": 920,
+    "revenue": 21460
+  },
+  {
+    "month": "Jan",
+    "sales": 11767,
+    "visitors": 1522,
+    "revenue": 23534
+  },
+  {
+    "month": "Feb",
+    "sales": 21863,
+    "visitors": 822,
+    "revenue": 43726
+  },
+  {
+    "month": "Mar",
+    "sales": 22363,
+    "visitors": 1408,
+    "revenue": 44726
+  },
+  {
+    "month": "Apr",
+    "sales": 22131,
+    "visitors": 1154,
+    "revenue": 44262
+  },
+  {
+    "month": "May",
+    "sales": 21831,
+    "visitors": 980,
+    "revenue": 43662
+  },
+  {
+    "month": "Jun",
+    "sales": 14787,
+    "visitors": 853,
+    "revenue": 29574
+  },
+  {
+    "month": "Jul",
+    "sales": 12196,
+    "visitors": 1307,
+    "revenue": 24392
+  },
+  {
+    "month": "Aug",
+    "sales": 17079,
+    "visitors": 1402,
+    "revenue": 34158
+  },
+  {
+    "month": "Sep",
+    "sales": 21908,
+    "visitors": 1594,
+    "revenue": 43816
+  },
+  {
+    "month": "Oct",
+    "sales": 16297,
+    "visitors": 813,
+    "revenue": 32594
+  },
+  {
+    "month": "Nov",
+    "sales": 12710,
+    "visitors": 1471,
+    "revenue": 25420
+  },
+  {
+    "month": "Dec",
+    "sales": 16029,
+    "visitors": 1117,
+    "revenue": 32058
+  },
+  {
+    "month": "Jan",
+    "sales": 22652,
+    "visitors": 1473,
+    "revenue": 45304
+  },
+  {
+    "month": "Feb",
+    "sales": 12947,
+    "visitors": 1459,
+    "revenue": 25894
+  },
+  {
+    "month": "Mar",
+    "sales": 16114,
+    "visitors": 1581,
+    "revenue": 32228
+  },
+  {
+    "month": "Apr",
+    "sales": 21485,
+    "visitors": 1593,
+    "revenue": 42970
+  },
+  {
+    "month": "May",
+    "sales": 14197,
+    "visitors": 1443,
+    "revenue": 28394
+  },
+  {
+    "month": "Jun",
+    "sales": 21308,
+    "visitors": 1538,
+    "revenue": 42616
+  },
+  {
+    "month": "Jul",
+    "sales": 14784,
+    "visitors": 1456,
+    "revenue": 29568
+  },
+  {
+    "month": "Aug",
+    "sales": 20636,
+    "visitors": 926,
+    "revenue": 41272
+  },
+  {
+    "month": "Sep",
+    "sales": 18333,
+    "visitors": 1499,
+    "revenue": 36666
+  },
+  {
+    "month": "Oct",
+    "sales": 13482,
+    "visitors": 1047,
+    "revenue": 26964
+  },
+  {
+    "month": "Nov",
+    "sales": 19839,
+    "visitors": 1328,
+    "revenue": 39678
+  },
+  {
+    "month": "Dec",
+    "sales": 18968,
+    "visitors": 1515,
+    "revenue": 37936
+  },
+  {
+    "month": "Jan",
+    "sales": 23945,
+    "visitors": 1510,
+    "revenue": 47890
+  },
+  {
+    "month": "Feb",
+    "sales": 14132,
+    "visitors": 1578,
+    "revenue": 28264
+  },
+  {
+    "month": "Mar",
+    "sales": 18397,
+    "visitors": 1239,
+    "revenue": 36794
+  },
+  {
+    "month": "Apr",
+    "sales": 16971,
+    "visitors": 915,
+    "revenue": 33942
+  }
+]
