@@ -11,7 +11,8 @@ const fullData = [
   { name: 'Product F', value: 350, month: 'Jun' },
 ];
 
-const COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#6366f1', '#e11d48'];
+// Function to generate HSL-based unique colors
+const generateColor = (index, total) => `hsl(${(index * 360) / total}, 70%, 55%)`;
 
 export default function PieGraph({ selectedRange }) {
   const getFilteredData = () => {
@@ -36,7 +37,7 @@ export default function PieGraph({ selectedRange }) {
             label
           >
             {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell key={`cell-${index}`} fill={generateColor(index, data.length)} />
             ))}
           </Pie>
           <Tooltip />
