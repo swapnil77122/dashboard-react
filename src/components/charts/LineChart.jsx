@@ -2,19 +2,20 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
+// Add unique year-based labels from 2015 to 2020
 const fullData = [
-  { name: 'Jan', visitors: 400 },
-  { name: 'Feb', visitors: 300 },
-  { name: 'Mar', visitors: 500 },
-  { name: 'Apr', visitors: 600 },
-  { name: 'May', visitors: 550 },
-  { name: 'Jun', visitors: 700 },
+  { name: 'Jan 2015', visitors: 400 },
+  { name: 'Feb 2016', visitors: 300 },
+  { name: 'Mar 2017', visitors: 500 },
+  { name: 'Apr 2018', visitors: 600 },
+  { name: 'May 2019', visitors: 550 },
+  { name: 'Jun 2020', visitors: 700 },
 ];
 
 export default function LineGraph({ selectedRange }) {
   const getFilteredData = () => {
-    if (selectedRange === 'Q1') return fullData.slice(0, 3);
-    if (selectedRange === 'Q2') return fullData.slice(3, 6);
+    if (selectedRange === 'Q1') return fullData.slice(0, 3); // Jan–Mar
+    if (selectedRange === 'Q2') return fullData.slice(3, 6); // Apr–Jun
     return fullData;
   };
 

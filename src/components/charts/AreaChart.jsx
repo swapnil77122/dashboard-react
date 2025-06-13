@@ -2,25 +2,26 @@ import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
 
+// Add year to make each entry unique (e.g., Jan 2019, Feb 2020)
 const fullData = [
-  { name: 'Jan', revenue: 1200 },
-  { name: 'Feb', revenue: 1400 },
-  { name: 'Mar', revenue: 1000 },
-  { name: 'Apr', revenue: 1600 },
-  { name: 'May', revenue: 1800 },
-  { name: 'Jun', revenue: 1500 },
-   { name: 'Jan', revenue: 1100 },
-  { name: 'Feb', revenue: 1700 },
-  { name: 'Mar', revenue: 1600 },
-  { name: 'Apr', revenue: 1400 },
-  { name: 'May', revenue: 1600 },
-  { name: 'Jun', revenue: 1400 },
+  { name: 'Jan 2019', revenue: 1200 },
+  { name: 'Feb 2019', revenue: 1400 },
+  { name: 'Mar 2019', revenue: 1000 },
+  { name: 'Apr 2020', revenue: 1600 },
+  { name: 'May 2020', revenue: 1800 },
+  { name: 'Jun 2020', revenue: 1500 },
+  { name: 'Jan 2021', revenue: 1100 },
+  { name: 'Feb 2021', revenue: 1700 },
+  { name: 'Mar 2021', revenue: 1600 },
+  { name: 'Apr 2022', revenue: 1400 },
+  { name: 'May 2022', revenue: 1600 },
+  { name: 'Jun 2022', revenue: 1400 },
 ];
 
 export default function AreaGraph({ selectedRange }) {
   const getFilteredData = () => {
-    if (selectedRange === 'Q1') return fullData.slice(0, 3);
-    if (selectedRange === 'Q2') return fullData.slice(3, 6);
+    if (selectedRange === 'Q1') return fullData.slice(0, 3);  // Jan–Mar
+    if (selectedRange === 'Q2') return fullData.slice(3, 6);  // Apr–Jun
     return fullData;
   };
 
@@ -37,7 +38,7 @@ export default function AreaGraph({ selectedRange }) {
             </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" label={{ value: 'Month', position: 'insideBottom', offset: -5 }} />
+          <XAxis dataKey="name" label={{ value: 'Month-Year', position: 'insideBottom', offset: -5 }} />
           <YAxis label={{ value: 'Revenue ($)', angle: -90, position: 'insideLeft' }} />
           <Tooltip />
           <Area
