@@ -1,5 +1,5 @@
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LabelList
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LabelList
 } from 'recharts';
 
 const fullData = [
@@ -9,7 +9,7 @@ const fullData = [
   { name: 'Apr', sales: 170 },
   { name: 'May', sales: 130 },
   { name: 'Jun', sales: 190 },
-   { name: 'Jan', sales: 120 },
+  { name: 'Jan', sales: 120 },
   { name: 'Feb', sales: 90 },
   { name: 'Mar', sales: 190 },
   { name: 'Apr', sales: 150 },
@@ -34,7 +34,7 @@ export default function BarGraph({ selectedRange }) {
           <XAxis dataKey="name" label={{ value: 'Month', position: 'insideBottom', offset: -5 }} />
           <YAxis label={{ value: 'Sales ($)', angle: -90, position: 'insideLeft' }} />
           <Tooltip />
-          <Legend />
+          {/* Legend removed */}
           <Bar dataKey="sales" fill="#3b82f6" radius={[4, 4, 0, 0]}>
             <LabelList dataKey="sales" position="top" />
           </Bar>
