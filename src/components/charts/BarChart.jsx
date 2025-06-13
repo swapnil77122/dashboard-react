@@ -9,12 +9,12 @@ const fullData = [
   { name: 'Apr ', sales: 170 },
   { name: 'May ', sales: 130 },
   { name: 'Jun ', sales: 190 },
-  { name: 'Jan', sales: 120 },
-  { name: 'Feb ', sales: 90 },
-  { name: 'Mar ', sales: 190 },
-  { name: 'Apr ', sales: 150 },
-  { name: 'May ', sales: 120 },
-  { name: 'Jun', sales: 110 },
+  { name: 'Jul', sales: 120 },
+  { name: 'Aug ', sales: 90 },
+  { name: 'Sep ', sales: 190 },
+  { name: 'Oct ', sales: 150 },
+  { name: 'Nov ', sales: 120 },
+  { name: 'Dec', sales: 110 },
 ];
 
 export default function BarGraph({ selectedRange }) {

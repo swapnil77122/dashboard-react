@@ -5,11 +5,11 @@ import {
 // Add unique year-based labels from 2015 to 2020
 const fullData = [
   { name: 'Jan 2015', visitors: 400 },
-  { name: 'Feb 2016', visitors: 300 },
-  { name: 'Mar 2017', visitors: 500 },
-  { name: 'Apr 2018', visitors: 600 },
-  { name: 'May 2019', visitors: 550 },
-  { name: 'Jun 2020', visitors: 700 },
+  { name: 'Feb 2015', visitors: 300 },
+  { name: 'Mar 2015', visitors: 500 },
+  { name: 'Apr 2015', visitors: 600 },
+  { name: 'May 2015', visitors: 550 },
+  { name: 'Jun 2015', visitors: 700 },
 ];
 
 export default function LineGraph({ selectedRange }) {
