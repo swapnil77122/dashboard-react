@@ -26,7 +26,7 @@ const generateFullData = () => {
 export default function TableComponent() {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
-  const rowsPerPage = 10;
+  const rowsPerPage = 5;
   const data = generateFullData();
 
   const filteredData = data.filter((row) =>
