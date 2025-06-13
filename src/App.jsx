@@ -4,6 +4,9 @@ import Dashboard from './pages/Dashboard';
 import DataTablePage from './pages/DataTablePage';
 import About from './pages/About';
 import ReportPage from './pages/ReportPage';
+import TrendsInsightsPage from './pages/TrendsPage';
+import SummaryInsightsPage from './pages/SummaryInsightsPage';
+
 
 import { Menu } from 'lucide-react'; // Optional: use Heroicons or Lucide
 
@@ -40,6 +43,8 @@ export default function App() {
                 <Link to="/" className="hover:underline">📈 Charts</Link>
                 <Link to="/data" className="hover:underline">📊 Usage Analytics</Link>
                 <Link to="/report" className="hover:underline">📝 Report Generator</Link>
+                <Link to="/trends" className="hover:underline"> 📝Trends</Link>
+                <Link to="/summary" className="hover:underline">📌 Smart Summary</Link>
                 <Link to="/about" className="hover:underline">ℹ️ About</Link>
               </nav>
             </aside>
@@ -52,6 +57,9 @@ export default function App() {
               <Route path="/data" element={<DataTablePage />} />
               <Route path="/about" element={<About />} />
               <Route path="/report" element={<ReportPage />} />
+<Route path="/trends" element={<TrendsInsightsPage />} />
+<Route path="/summary" element={<SummaryInsightsPage />} />
+
             </Routes>
           </main>
         </div>
