@@ -3,17 +3,17 @@ import {
 } from 'recharts';
 
 const fullData = [
+  { name: 'Jan ', sales: 120 },
+  { name: 'Feb ', sales: 90 },
+  { name: 'Mar ', sales: 150 },
+  { name: 'Apr ', sales: 170 },
+  { name: 'May ', sales: 130 },
+  { name: 'Jun ', sales: 190 },
   { name: 'Jan', sales: 120 },
-  { name: 'Feb', sales: 90 },
-  { name: 'Mar', sales: 150 },
-  { name: 'Apr', sales: 170 },
-  { name: 'May', sales: 130 },
-  { name: 'Jun', sales: 190 },
-  { name: 'Jan', sales: 120 },
-  { name: 'Feb', sales: 90 },
-  { name: 'Mar', sales: 190 },
-  { name: 'Apr', sales: 150 },
-  { name: 'May', sales: 120 },
+  { name: 'Feb ', sales: 90 },
+  { name: 'Mar ', sales: 190 },
+  { name: 'Apr ', sales: 150 },
+  { name: 'May ', sales: 120 },
   { name: 'Jun', sales: 110 },
 ];
 
@@ -26,15 +26,32 @@ export default function BarGraph({ selectedRange }) {
 
   const data = getFilteredData();
 
+  // 🆕 Add year labels only for display
+  const dataWithYear = data.map((entry, index) => ({
+    ...entry,
+    nameDisplay: index < 6 ? `${entry.name.trim()} 2020` : `${entry.name.trim()} 2021`
+  }));
+
   return (
     <div className="w-full h-[300px]">
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={data}>
+        <BarChart data={dataWithYear}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" label={{ value: 'Month', position: 'insideBottom', offset: -5 }} />
+          <XAxis
+            dataKey="nameDisplay"
+            label={{ value: 'Month', position: 'insideBottom', offset: -5 }}
+            tick={{ fontSize: 12 }}
+          /><XAxis
+  dataKey="nameDisplay"
+  label={{ value: 'Month', position: 'insideBottom', offset: -5 }}
+  tick={{ fontSize: 12, angle: -40, dy: 10 }}
+/>
+
           <YAxis label={{ value: 'Sales ($)', angle: -90, position: 'insideLeft' }} />
-          <Tooltip />
-          {/* Legend removed */}
+          <Tooltip
+            formatter={(value) => [`$${value}`, 'Sales']}
+            labelFormatter={(label) => `Month: ${label}`}
+          />
           <Bar dataKey="sales" fill="#3b82f6" radius={[4, 4, 0, 0]}>
             <LabelList dataKey="sales" position="top" />
           </Bar>
