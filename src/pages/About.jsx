@@ -56,7 +56,7 @@ export default function About() {
             <ul className="list-disc text-sm text-gray-700 pl-6 space-y-1">
               <li>Can I download the data? → Yes, use the CSV download button in the Table page.</li>
               <li>Are graphs responsive? → Yes, they adapt to screen size using Recharts.</li>
-              <li>Can I upload my data? → Coming soon in future versions!</li>
+              <li>Can I get my report generated based on snapshot addition? → Yes u can do it!</li>
             </ul>
           </div>
         )}
