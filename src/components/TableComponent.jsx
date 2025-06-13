@@ -1,11 +1,34 @@
 import { useState } from 'react';
 
-export default function TableComponent({ data }) {
+// Generate unique month-year entries from 2010 to 2020
+const generateFullData = () => {
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const fullData = [];
+
+  let salesBase = 100;
+  let visitorsBase = 500;
+  let revenueBase = 1000;
+
+  for (let year = 2010; year <= 2020; year++) {
+    for (let i = 0; i < 12; i++) {
+      fullData.push({
+        month: `${months[i]} ${year}`,
+        sales: salesBase + Math.floor(Math.random() * 100),
+        visitors: visitorsBase + Math.floor(Math.random() * 300),
+        revenue: revenueBase + Math.floor(Math.random() * 500),
+      });
+    }
+  }
+
+  return fullData;
+};
+
+export default function TableComponent() {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
-  const rowsPerPage = 5;
+  const rowsPerPage = 10;
+  const data = generateFullData();
 
-  // 🔍 Filter by month
   const filteredData = data.filter((row) =>
     row.month.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -26,10 +49,7 @@ export default function TableComponent({ data }) {
       row.revenue
     ]);
 
-    const csvContent = [header, ...rows]
-      .map(e => e.join(','))
-      .join('\n');
-
+    const csvContent = [header, ...rows].map(e => e.join(',')).join('\n');
     const blob = new Blob([csvContent], { type: 'text/csv' });
     const url = window.URL.createObjectURL(blob);
 
@@ -43,7 +63,7 @@ export default function TableComponent({ data }) {
   return (
     <div className="bg-white rounded-lg shadow border p-6">
       <div className="mb-4 flex flex-col md:flex-row justify-between gap-4">
-        <h2 className="text-xl font-semibold text-gray-800">📊 Monthly Metrics</h2>
+        <h2 className="text-xl font-semibold text-gray-800">📊 Monthly Metrics (2010–2020)</h2>
         <div className="flex gap-2 items-center">
           <input
             type="text"
@@ -51,7 +71,7 @@ export default function TableComponent({ data }) {
             value={searchQuery}
             onChange={(e) => {
               setSearchQuery(e.target.value);
-              setCurrentPage(1); // reset to first page
+              setCurrentPage(1);
             }}
             className="border px-3 py-1 rounded text-sm"
           />
