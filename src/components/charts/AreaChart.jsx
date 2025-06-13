@@ -22,6 +22,7 @@ export default function AreaGraph({ selectedRange }) {
   const getFilteredData = () => {
     if (selectedRange === 'Q1') return fullData.slice(0, 3);  // Jan–Mar
     if (selectedRange === 'Q2') return fullData.slice(3, 6);  // Apr–Jun
+    
     return fullData;
   };
 
