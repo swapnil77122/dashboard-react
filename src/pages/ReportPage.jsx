@@ -36,15 +36,21 @@ export default function ReportPage() {
     const selectedLabel = months.find(m => m.value === selectedMonth)?.label || selectedMonth;
     doc.text(`📊 Report (${selectedLabel})`, 14, 16);
 
+    // Filter all same-month data to count how many years to add
+    const sameMonthData = metricsData.filter(r => r.month === selectedMonth);
+
     autoTable(doc, {
       startY: 22,
       head: [['Month', 'Sales', 'Visitors', 'Revenue']],
-      body: filteredData.map(row => [
-        row.month,
-        `$${row.sales.toLocaleString()}`,
-        row.visitors.toLocaleString(),
-        `$${row.revenue.toLocaleString()}`
-      ])
+      body: sameMonthData.map((row, index) => {
+        const year = 2010 + index;
+        return [
+          `${row.month} ${year}`,
+          `$${row.sales.toLocaleString()}`,
+          row.visitors.toLocaleString(),
+          `$${row.revenue.toLocaleString()}`
+        ];
+      })
     });
 
     const finalY = doc.lastAutoTable?.finalY || 40;
