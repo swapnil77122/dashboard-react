@@ -34,7 +34,7 @@ export default function ReportPage() {
   const exportPDF = () => {
     const doc = new jsPDF();
     const selectedLabel = months.find(m => m.value === selectedMonth)?.label || selectedMonth;
-    doc.text(`📊 Report (${selectedLabel})`, 14, 16);
+    doc.text(` Report (${selectedLabel})`, 14, 16);
 
     // Filter all same-month data to count how many years to add
     const sameMonthData = metricsData.filter(r => r.month === selectedMonth);

@@ -63,7 +63,7 @@ export default function TableComponent() {
   return (
     <div className="bg-white rounded-lg shadow border p-6">
       <div className="mb-4 flex flex-col md:flex-row justify-between gap-4">
-        <h2 className="text-xl font-semibold text-gray-800">📊 Monthly Metrics (2010–2020)</h2>
+        <h2 className="text-xl font-semibold text-gray-800"> Monthly Metrics (2010–2020)</h2>
         <div className="flex gap-2 items-center">
           <input
             type="text"

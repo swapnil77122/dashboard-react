@@ -29,7 +29,7 @@ export default function BarGraph({ selectedRange }) {
   // 🆕 Add year labels only for display
   const dataWithYear = data.map((entry, index) => ({
     ...entry,
-    nameDisplay: index < 6 ? `${entry.name.trim()} 2020` : `${entry.name.trim()} 2021`
+    nameDisplay: index < 6 ? `${entry.name.trim()} ` : `${entry.name.trim()} `
   }));
 
   return (

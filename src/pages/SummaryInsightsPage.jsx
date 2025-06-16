@@ -36,7 +36,7 @@ export default function SummaryInsightsPage() {
 
   return (
     <div className="p-6 bg-white rounded shadow max-w-4xl mx-auto">
-      <h1 className="text-2xl font-semibold text-gray-800 mb-6">📌 Monthly Summary</h1>
+      <h1 className="text-2xl font-semibold text-gray-800 mb-6"> Monthly Summary</h1>
 
       <label className="block mb-4">
         <span className="font-medium">Select Month:</span>
